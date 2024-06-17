@@ -81,6 +81,8 @@ int get_floppy_devtype_from_type(int type)
       return BX_FDD_350DD;
     case BX_FLOPPY_1_2:
       return BX_FDD_525HD;
+    case BX_FLOPPY_180K:
+      return BX_FDD_525SD;
     // the remaining types return a 5 1/4" 360k drive
     case BX_FLOPPY_360K:
     default:
@@ -2732,6 +2734,9 @@ static int parse_line_formatted(const char *context, int num_params, char *param
         else if (!strcmp(value, "360k")) {
           dt = BX_FDD_525DD;
         }
+        else if (!strcmp(value, "180k")) {
+          dt = BX_FDD_525SD;
+        }
         else if (!strcmp(value, "none")) {
           dt = BX_FDD_NONE;
         }
@@ -3530,6 +3535,8 @@ int bx_write_floppy_options(FILE *fp, int drive)
       fprintf(fp, "720k");
     } else if (ftype == BX_FDD_525DD) {
       fprintf(fp, "360k");
+    } else if (ftype == BX_FDD_525SD) {
+      fprintf(fp, "180k");
     }
   }
   if ((SIM->get_param_enum(type)->get() > BX_FLOPPY_NONE) &&

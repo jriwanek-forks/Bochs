@@ -466,11 +466,12 @@ enum {
 };
 
 #define BX_FDD_NONE  0 // floppy not present
-#define BX_FDD_525DD 1 // 360K  5.25"
-#define BX_FDD_525HD 2 // 1.2M  5.25"
-#define BX_FDD_350DD 3 // 720K  3.5"
-#define BX_FDD_350HD 4 // 1.44M 3.5"
-#define BX_FDD_350ED 5 // 2.88M 3.5"
+#define BX_FDD_525SD 1 // 180K  5.25"
+#define BX_FDD_525DD 2 // 360K  5.25"
+#define BX_FDD_525HD 3 // 1.2M  5.25"
+#define BX_FDD_350DD 4 // 720K  3.5"
+#define BX_FDD_350HD 5 // 1.44M 3.5"
+#define BX_FDD_350ED 6 // 2.88M 3.5"
 
 #define BX_FLOPPY_NONE   10 // media not present
 #define BX_FLOPPY_1_2    11 // 1.2M  5.25"

@@ -40,11 +40,12 @@ enum {
 #define FLOPPY_DMA_CHAN 2
 
 #define FDRIVE_NONE  0x00
-#define FDRIVE_525DD 0x01
-#define FDRIVE_525HD 0x02
-#define FDRIVE_350DD 0x04
-#define FDRIVE_350HD 0x08
-#define FDRIVE_350ED 0x10
+#define FDRIVE_525SD 0x01
+#define FDRIVE_525DD 0x02
+#define FDRIVE_525HD 0x04
+#define FDRIVE_350DD 0x08
+#define FDRIVE_350HD 0x10
+#define FDRIVE_350ED 0x20
 
 // Command Bits
 #define FD_CMD_MT    0x80
