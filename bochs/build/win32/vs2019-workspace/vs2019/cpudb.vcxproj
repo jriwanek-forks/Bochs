@@ -238,6 +238,7 @@
     <ClCompile Include="..\cpu\cpudb\intel\corei7_haswell_4790K.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_ivy_bridge_3770K.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_sandy_bridge_2600K.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei7_sandy_bridge_2700K.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_skylake-x.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\p2_klamath.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\p3_katmai.cc" />

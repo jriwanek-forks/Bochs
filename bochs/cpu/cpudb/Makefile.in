@@ -48,6 +48,7 @@ CPUDB_OBJS = intel/pentium.o \
              intel/corei5_lynnfield_750.o \
              intel/corei5_arrandale_m520.o \
              intel/corei7_sandy_bridge_2600K.o \
+             intel/corei7_sandy_bridge_2700K.o \
              intel/corei7_ivy_bridge_3770K.o \
              intel/corei7_haswell_4770.o \
              intel/corei7_haswell_4770K.o \
@@ -346,6 +347,17 @@ intel/corei7_sandy_bridge_2600K.o: intel/corei7_sandy_bridge_2600K.@CPP_SUFFIX@ 
  ../vmx.h ../vmx_ctrls.h ../access.h ../../gui/siminterface.h \
  ../../gui/paramtree.h ../../param_names.h \
  intel/corei7_sandy_bridge_2600K.h ../../cpu/cpuid.h
+intel/corei7_sandy_bridge_2700K.o: intel/corei7_sandy_bridge_2700K.@CPP_SUFFIX@ \
+ ../../bochs.h ../../config.h ../../osdep.h ../../logio.h \
+ ../../misc/bswap.h ../cpu.h ../../bx_debug/debug.h ../../config.h \
+ ../../osdep.h ../../cpu/decoder/decoder.h ../../cpu/decoder/features.h \
+ ../decoder/decoder.h ../../instrument/stubs/instrument.h ../i387.h \
+ ../softfloat3e/include/softfloat_types.h ../fpu/tag_w.h \
+ ../fpu/status_w.h ../fpu/control_w.h ../crregs.h ../descriptor.h \
+ ../decoder/instr.h ../lazy_flags.h ../tlb.h ../icache.h ../xmm.h \
+ ../vmx.h ../vmx_ctrls.h ../access.h ../../gui/siminterface.h \
+ ../../gui/paramtree.h ../../param_names.h \
+ intel/corei7_sandy_bridge_2700K.h ../../cpu/cpuid.h
 intel/corei7_skylake-x.o: intel/corei7_skylake-x.@CPP_SUFFIX@ ../../bochs.h \
  ../../config.h ../../osdep.h ../../logio.h ../../misc/bswap.h ../cpu.h \
  ../../bx_debug/debug.h ../../config.h ../../osdep.h \
