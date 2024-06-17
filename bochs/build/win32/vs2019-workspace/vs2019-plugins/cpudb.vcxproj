@@ -232,6 +232,7 @@
     <ClCompile Include="..\cpu\cpudb\intel\corei5_lynnfield_750.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_haswell_4770.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_haswell_4770k.cc" />
+    <ClCompile Include="..\cpu\cpudb\intel\corei7_haswell_4771.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_icelake-u.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_ivy_bridge_3770K.cc" />
     <ClCompile Include="..\cpu\cpudb\intel\corei7_sandy_bridge_2600K.cc" />
